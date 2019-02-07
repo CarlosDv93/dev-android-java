@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Adivinha</string>
+    <string name="msg_inicial">Escolha um Número entre 0 e 10</string>
+    <string name="btn_jogar">Jogar</string>
+    <string name="msg_nenhum">Nenhum número</string>
+    <string name="fraseNovaTV" />
+</resources>

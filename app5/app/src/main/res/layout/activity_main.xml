@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/logoImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="69dp"
+        android:src="@drawable/logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/empresaId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="72dp"
+        android:layout_marginLeft="72dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="37dp"
+        android:layout_marginRight="37dp"
+        android:layout_marginBottom="68dp"
+        android:src="@drawable/menu_empresa"
+        app:layout_constraintBottom_toTopOf="@+id/clientesId"
+        app:layout_constraintEnd_toStartOf="@+id/servicosId"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logoImage" />
+
+    <ImageView
+        android:id="@+id/servicosId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginLeft="36dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="72dp"
+        android:layout_marginRight="72dp"
+        android:src="@drawable/menu_servico"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/empresaId"
+        app:layout_constraintTop_toBottomOf="@+id/logoImage" />
+
+    <ImageView
+        android:id="@+id/clientesId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="72dp"
+        android:layout_marginLeft="72dp"
+        android:layout_marginTop="68dp"
+        android:layout_marginEnd="37dp"
+        android:layout_marginRight="37dp"
+        android:src="@drawable/menu_cliente"
+        app:layout_constraintEnd_toStartOf="@+id/contatoId"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/empresaId" />
+
+    <ImageView
+        android:id="@+id/contatoId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="37dp"
+        android:layout_marginLeft="37dp"
+        android:layout_marginTop="68dp"
+        android:layout_marginEnd="72dp"
+        android:layout_marginRight="72dp"
+        android:src="@drawable/menu_contato"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/clientesId"
+        app:layout_constraintTop_toBottomOf="@+id/servicosId" />
+
+</android.support.constraint.ConstraintLayout>
